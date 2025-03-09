@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number</title>
+</head>
+<body>
+    <p id="randomNumber">Click button to generate random number!</p>
+<button onclick="generateRandomNumber()">Generate Random Number</button>
+<script>
+
+function generateRandomNumber() {
+    var randomNum = Math.floor(Math.random() * 100) + 1; 
+    document.getElementById('randomNumber').innerText = randomNum;
+}
+
+</script>
+</body>
+</html>
